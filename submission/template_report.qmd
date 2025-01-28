@@ -1,0 +1,8 @@
+---
+title: "Template Report"
+author: ""
+format:
+  html:
+    embed-resources: true
+---
+

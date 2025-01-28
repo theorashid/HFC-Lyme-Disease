@@ -1,0 +1,22 @@
+---
+title: "Forecasting Demo"
+author: "Josh Tyler"
+format:
+  html:
+    embed-resources: true
+  pdf: default
+editor_options: 
+  chunk_output_type: console
+---
+
+# Introduction
+
+# Organising The Data
+
+
+# Plotting The Data
+
+# Creating a Forecast
+
+
+# Creating the results table
