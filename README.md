@@ -1,12 +1,4 @@
-# SPHERE-PPL Forecasting Contest Template
-
-This is the official template repository for SPHERE-PPL Forecasting Contest. 
-
-Each contest will have its own repository with pre-prepared data (found in the data folder) and a template report (demo_analysis.qmd) that will showcase how to load the data, perform analyses and then export results into the correct format. There will also be a folder for any additional scripts that are required. Any coding languages are allowed but all analyses must be reproducible by the panel. 
-
-More details about the contests and the SPHERE-PPL Community can be found at: <https://SPHERE-PPL.github.io>.
-
-The remainder of this README will show the different sections that will usually be included in the contest set-up.
+# SPHERE-PPL Health Forecasting Contest - UK Lyme Disease
 
 ## Introduction[^readme-1]
 
@@ -18,7 +10,7 @@ Habitats suitable for acquiring infection occur in temperate regions of the nort
 Several pathogenic genospecies of B. burgdorferi have been identified in Europe and there is evidence for some variation in the types of clinical presentation caused by these different genospecies.
 
 ## Forecasting Outputs
-For this contest, we are looking to forecast monthly Lyme Disease Cases at a range of geographical scales for the first ? months of 2025 (?).
+For this contest, we are looking to forecast monthly Lyme Disease Cases at a range of geographical scales for 2024 & 2025.
 
 Forecasts and reports should be saved into the submission folder, matching the template found within. 
 
