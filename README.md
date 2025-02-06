@@ -8,22 +8,34 @@ More details about the contests and the SPHERE-PPL Community can be found at: <h
 
 The remainder of this README will show the different sections that will usually be included in the contest set-up.
 
-## Introduction
-This is for setting the scene and providing details relating to the Annual Meeting and the drivers behind the contest.
+## Introduction[^readme-1]
+
+[^readme-1]: Adapted from UKHSA Website (<https://www.gov.uk/government/publications/lyme-borreliosis-epidemiology/lyme-borreliosis-epidemiology-and-surveillance>)
+Lyme disease is the most common vector-borne human infection in England and Wales. As elsewhere in northern Europe, the spirochaetes (Borrelia burgdorferi) are transmitted by the hard bodied tick, Ixodes ricinus, commonly known as deer or sheep ticks.
+
+Habitats suitable for acquiring infection occur in temperate regions of the northern hemisphere, usually in forested woodland or heathland areas which support the life-cycles of ticks and the small mammals and birds that can be reservoir hosts for B. burgdorferi.
+
+Several pathogenic genospecies of B. burgdorferi have been identified in Europe and there is evidence for some variation in the types of clinical presentation caused by these different genospecies.
 
 ## Forecasting Outputs
-Need to outline the specific ask of the contest and what it means for the policies/community etc.
+For this contest, we are looking to forecast monthly Lyme Disease Cases at a range of geographical scales for the first ? months of 2025 (?).
+
+Forecasts and reports should be saved into the submission folder, matching the template found within. 
 
 ## Joining the contest & Getting Started
 Here we will need details of how to fork the repo / download the data and then a brief intro to the .qmd reporting.
 
 ## Rules
-There will be generic rules on the website but here we will give the specific timelines for submissions and how the panel will be assessing the accuracy of the predictions.
+-   Any coding languages are allowed but all analyses must be reproducible by the panel.
+-   All entries must be loaded into a public Github repo.
+-   All entries must follow the submission formats outlined below.
+-   All entries must include a max 1000 word report to accompany the forecast analyses. This can be as a separate PDF/hmtl or incorporated into a quarto/jupyter notebook.
+
 
 ## How to Submit
 
 ## Connect with the Community
-Each contest will be stored in its own repo within the SPHERE-PPL organisation and we will also have a Zulip space for each. Links should be placed here and how we plan to communicate on a regular basis. 
+You can join our Zulip here: (URL) and check out our events page to see the next online catch-up.
 
 ## License
 
