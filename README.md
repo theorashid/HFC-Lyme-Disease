@@ -3,6 +3,7 @@
 ## Introduction[^readme-1]
 
 [^readme-1]: Adapted from UKHSA Website (<https://www.gov.uk/government/publications/lyme-borreliosis-epidemiology/lyme-borreliosis-epidemiology-and-surveillance>)
+
 Lyme disease is the most common vector-borne human infection in England and Wales. As elsewhere in northern Europe, the spirochaetes (Borrelia burgdorferi) are transmitted by the hard bodied tick, Ixodes ricinus, commonly known as deer or sheep ticks.
 
 Habitats suitable for acquiring infection occur in temperate regions of the northern hemisphere, usually in forested woodland or heathland areas which support the life-cycles of ticks and the small mammals and birds that can be reservoir hosts for B. burgdorferi.
@@ -10,7 +11,7 @@ Habitats suitable for acquiring infection occur in temperate regions of the nort
 Several pathogenic genospecies of B. burgdorferi have been identified in Europe and there is evidence for some variation in the types of clinical presentation caused by these different genospecies.
 
 ## Forecasting Outputs
-For this contest, we are looking to forecast monthly Lyme Disease Cases at a range of geographical scales for 2024 & 2025.
+For this contest, we are looking to forecast Lyme Disease Cases at a range of geographical scales for 2024 & 2025.
 
 Forecasts and reports should be saved into the submission folder, matching the template found within. 
 
