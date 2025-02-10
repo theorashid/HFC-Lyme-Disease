@@ -1,5 +1,7 @@
 # SPHERE-PPL Health Forecasting Contest - UK Lyme Disease
 
+> [**This repo/contest is currently under construction so details may change before the start date.**]{.underline}
+
 ## Introduction[^readme-1]
 
 [^readme-1]: Adapted from UKHSA Website (<https://www.gov.uk/government/publications/lyme-borreliosis-epidemiology/lyme-borreliosis-epidemiology-and-surveillance>)
