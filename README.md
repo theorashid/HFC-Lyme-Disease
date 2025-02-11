@@ -21,7 +21,9 @@ Forecasts and reports should be saved into the submission folder, matching the t
 Here we will need details of how to fork the repo / download the data and then a brief intro to the .qmd reporting.
 
 Here are some covariates that might be an interesting starting point:
-- Tick distributions in the UK & other VBD related data: https://github.com/fwimp/ohvbd 
+- Tick distributions in the UK & other VBD related data: https://github.com/fwimp/ohvbd
+- Geographical data for the UK: https://github.com/rspatial/geodata
+- National Park GIS data: https://naturalengland-defra.opendata.arcgis.com/datasets/national-parks-england/explore?location=53.302276%2C-1.251342%2C7.67
 
 
 ## Rules
