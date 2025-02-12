@@ -22,6 +22,8 @@ In order to join the contest, you will need to fork or download the repo.
 
 To fork the repo, simply press the "fork" button (circled in gold in the image below), which can be found at the top of this github page. Follow the instructions which will add a fork of the repo to your github account.
 
+<iframe src="https://scribehow.com/embed/Forking_a_SPHERE-PPL_Forecasting_Contest_Repository_on_GitHub__o_bLCyQlTsO0o5YCmGsk8Q" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
+
 To download the data without a github account, click the code dropdown (circled in blue in the image below) and download a zip of the data directly to your computer.
 
 ![Fork or Download](https://github.com/SPHERE-PPL/forecasting-contest-template/blob/main/contest_media/fork_button.png)
