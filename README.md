@@ -20,9 +20,9 @@ Forecasts and reports should be saved into the submission folder, matching the t
 ## Joining the contest & Getting Started
 In order to join the contest, you will need to fork or download the repo. 
 
-To fork the repo, simply press the "fork" button (circled in gold in the image below), which can be found at the top of this github page. A step-by-step guide can be found [here](https://scribehow.com/shared/Forking_a_SPHERE-PPL_Forecasting_Contest_Repository_on_GitHub__o_bLCyQlTsO0o5YCmGsk8Q).
+To fork the repo, simply press the "fork" button, which can be found at the top of this github page. A step-by-step guide can be found [here](https://scribehow.com/shared/Forking_a_SPHERE-PPL_Forecasting_Contest_Repository_on_GitHub__o_bLCyQlTsO0o5YCmGsk8Q).
 
-To download the data without a github account, click the code dropdown (circled in blue in the image below) and download a zip of the data directly to your computer.
+To download the data without a github account, click the code box dropdown and download a zip of the data directly to your computer.
 
 ![Fork or Download](https://github.com/SPHERE-PPL/forecasting-contest-template/blob/main/contest_media/fork_button.png)
 
