@@ -24,7 +24,7 @@ To fork the repo, simply press the "fork" button (circled in gold in the image b
 
 To download the data without a github account, click the code dropdown (circled in blue in the image below) and download a zip of the data directly to your computer.
 
-![Fork or Download](https://github.com/SPHERE-PPL/HFC-Lyme-Disease/blob/main/contest_media/fork_button.png)
+![Fork or Download](https://github.com/SPHERE-PPL/forecasting-contest-template/blob/main/contest_media/fork_button.png)
 
 Here are some covariates that might be an interesting starting point:
 - Tick distributions in the UK & other VBD related data: https://github.com/fwimp/ohvbd
