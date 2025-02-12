@@ -20,6 +20,8 @@ Forecasts and reports should be saved into the submission folder, matching the t
 ## Joining the contest & Getting Started
 Here we will need details of how to fork the repo / download the data and then a brief intro to the .qmd reporting.
 
+![Fork or Download](https://github.com/SPHERE-PPL/HFC-Lyme-Disease/blob/main/contest_media/fork_button.png)
+
 Here are some covariates that might be an interesting starting point:
 - Tick distributions in the UK & other VBD related data: https://github.com/fwimp/ohvbd
 - Geographical data for the UK: https://github.com/rspatial/geodata
