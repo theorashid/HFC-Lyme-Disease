@@ -45,7 +45,7 @@ If you forked the repo, congratulations, you have already enetered the contest. 
 If you did not fork the repo, please send an email to contest@sphere-ppl.org with a link to your public github repo where your forecast and report are stored. These will then be collated with the other entries.
 
 ## Connect with the Community
-You can join our Zulip here: (URL) and check out our events page to see the next online catch-up.
+You can join our Zulip [here](https://sphereppl.zulipchat.com/join/olwtpi7g3wbyh5mxv4uwipaw/) and check out our events page to see the next online catch-up.
 
 ## License
 
