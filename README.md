@@ -18,17 +18,14 @@ For this contest, we are looking to forecast Lyme Disease Cases at a range of ge
 
 Forecasts and reports should be saved into the submission folder, matching the template found within.
 
-There are 5 columns to be filled for the forecast:
+There are 3 columns to be filled for the forecast:
 
-1.  Cases
 
-2.  Population
+1.  Incidence (Mean)
 
-3.  Incidence (Mean)
+2.  Incidence (Lower 95th Confidence Interval)
 
-4.  Incidence (Lower 95th Confidence Interval)
-
-5.  Incidence (Upper 95th Confidence Interval)
+3.  Incidence (Upper 95th Confidence Interval)
 
 ## Joining the contest & Getting Started
 

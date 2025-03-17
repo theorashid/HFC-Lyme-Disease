@@ -13,10 +13,98 @@ editor_options:
 
 # Organising The Data
 
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+#| output: false
+library(tidyverse)
+library(sf)
+
+dat <- read.csv("data/FULL-UKHSA-2017-2022-Lyme-Disease.csv") |> 
+  filter(!is.na(Value))
+
+dat <- dat |> 
+  filter(Area.Type %in% c("UA","District")) |> 
+  select(Area.Code,Area.Name,Area.Type,
+         Time.period,Value,Denominator,
+         Lower.CI.95.0.limit,Upper.CI.95.0.limit)
+
+council_map<-st_read("data/Council_Maps/Councils.shp")
+
+lt_up<-read.csv("data/Lower_to_Upper.csv")
+
+region_lookup<-read.csv("data/Region_Lookup.csv") |> 
+  select(LTLA22CD,LTLA22NM,UTLA22CD,UTLA22NM,RGN22CD,RGN22NM) |>
+  distinct()
+
+df<- dat |> 
+  left_join(region_lookup |> 
+              select("LTLA22CD","RGN22CD","RGN22NM") |>
+              rename("Area.Code" = "LTLA22CD",
+                     "Region.Code"= "RGN22CD",
+                     "Region.Name" = "RGN22NM"),
+            by = "Area.Code"
+            )
+```
 
 # Plotting The Data
 
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+
+# Calculate average Value per Region.Name and Time.period
+average_df <- df %>%
+  group_by(Region.Name, Time.period) %>%
+  summarise(Average_Value = mean(Value, na.rm = TRUE)) 
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+# Create the ggplot with points and lines
+ggplot(data = df) +
+  geom_point(aes(x = Time.period, y = Value, colour = Region.Name)) +
+  geom_line(data = average_df, 
+            aes(x = Time.period, y = Average_Value, 
+                colour = Region.Name), size = 1) +
+  theme_bw()
+```
+
 # Creating a Forecast
 
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+results<-expand_grid(Area.Name=unique(dat$Area.Name),Time.period=c(2023,2024)) |> 
+  as.data.frame()
+
+model<-lm(formula = Value ~ Time.period + Area.Name,data = df)
+
+prediction<-predict(object = model,newdata = results)
+
+prediction[which(prediction<0)]<-0
+
+results<-cbind(results,prediction)
+
+```
 
 # Creating the results table
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+forecast<-results |> 
+  select(Time.period,Area.Name,prediction) |> 
+  rename("Year"=Time.period,"Council"="Area.Name","Incidence"=prediction) |> 
+  mutate(Lower_95CI=Incidence) |> 
+  mutate(Upper_95_CI=Incidence) |> 
+  arrange(Year,Council)
+
+write.csv(x = forecast,file = "example_forecast.csv")
+```
