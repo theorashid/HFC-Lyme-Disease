@@ -20,7 +20,6 @@ Forecasts and reports should be saved into the submission folder, matching the t
 
 There are 3 columns to be filled for the forecast:
 
-
 1.  Incidence (Mean)
 
 2.  Incidence (Lower 95th Confidence Interval)
@@ -51,6 +50,16 @@ Here are some covariates that might be an interesting starting point:
 -   All entries must be loaded into a public Github repo.
 -   All entries must follow the submission formats outlined below.
 -   All entries must include a max 1000 word report to accompany the forecast analyses. This can be as a separate PDF/hmtl or incorporated into a quarto/jupyter notebook.
+
+## How to Win!
+
+Awards will be given across two categories:
+
+1. The team with the closest forecast, as measured by Root Mean Squared Error.  
+
+2. The team with the most interesting report.
+
+The winners will be selected by the SPHERE-PPL Team and will be invited to present their forecasts at the next Annual Meeting, with travel covered by the project.
 
 ## How to Submit
 
