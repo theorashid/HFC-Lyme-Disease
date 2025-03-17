@@ -11,7 +11,11 @@ editor_options:
 
 # Introduction
 
+This is an example analysis report for the mpox forecasting competition. Here we outline an analysis workflow that starts at loading in the data and ends with the creation of the Estimates in the correct submission format.
+
 # Organising The Data
+
+In order to create a forecast, we must first load and clean the raw Incidence data. The historic data was filtered to include only rows where there is no missing data and then joined to a table providing England regions. We have left the incidence rates as per 100,000 population.
 
 ```{r}
 #| message: false
@@ -20,6 +24,7 @@ editor_options:
 #| output: false
 library(tidyverse)
 library(sf)
+library(geodata)
 
 dat <- read.csv("data/FULL-UKHSA-2017-2022-Lyme-Disease.csv") |> 
   filter(!is.na(Value))
@@ -30,9 +35,9 @@ dat <- dat |>
          Time.period,Value,Denominator,
          Lower.CI.95.0.limit,Upper.CI.95.0.limit)
 
-council_map<-st_read("data/Council_Maps/Councils.shp")
+auth_map<-st_read("data/Local_Authority_Districts_December_2024_Maps/LAD_DEC_24_UK_BFC.shp")
+auth_extent<-ext(auth_map)
 
-lt_up<-read.csv("data/Lower_to_Upper.csv")
 
 region_lookup<-read.csv("data/Region_Lookup.csv") |> 
   select(LTLA22CD,LTLA22NM,UTLA22CD,UTLA22NM,RGN22CD,RGN22NM) |>
@@ -46,9 +51,13 @@ df<- dat |>
                      "Region.Name" = "RGN22NM"),
             by = "Area.Code"
             )
+
+
 ```
 
 # Plotting The Data
+
+In order to assess whether there is a significant difference between English Regions, we have plotted Incidence against time, with a mean value for each region as a line plot.
 
 ```{r}
 #| message: false
@@ -76,6 +85,8 @@ ggplot(data = df) +
 
 # Creating a Forecast
 
+This example uses a simple regression model whereby each area has its own coefficients.
+
 ```{r}
 #| message: false
 #| warning: false
@@ -95,10 +106,14 @@ results<-cbind(results,prediction)
 
 # Creating the results table
 
+We have constructed a data.frame to match the expected output columns, as given in the output template.
+
 ```{r}
 #| message: false
 #| warning: false
 #| echo: true
+library(gt)
+
 forecast<-results |> 
   select(Time.period,Area.Name,prediction) |> 
   rename("Year"=Time.period,"Council"="Area.Name","Incidence"=prediction) |> 
@@ -107,4 +122,7 @@ forecast<-results |>
   arrange(Year,Council)
 
 write.csv(x = forecast,file = "example_forecast.csv")
+
+gt(forecast)
+
 ```
