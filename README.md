@@ -14,7 +14,7 @@ Several pathogenic genospecies of B. burgdorferi have been identified in Europe 
 
 ## Forecasting Outputs
 
-For this contest, we are looking to forecast Lyme Disease Cases at a range of geographical scales for 2024 & 2025. Incidence rates should be given as cases per 100,000 population.
+For this contest, we are looking to forecast Lyme Disease Cases at a range of geographical scales for 2023 & 2024. Incidence rates should be given as cases per 100,000 population.
 
 Forecasts and reports should be saved into the submission folder, matching the template found within.
 
