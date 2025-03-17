@@ -35,9 +35,6 @@ dat <- dat |>
          Time.period,Value,Denominator,
          Lower.CI.95.0.limit,Upper.CI.95.0.limit)
 
-auth_map<-st_read("data/Local_Authority_Districts_December_2024_Maps/LAD_DEC_24_UK_BFC.shp")
-auth_extent<-ext(auth_map)
-
 
 region_lookup<-read.csv("data/Region_Lookup.csv") |> 
   select(LTLA22CD,LTLA22NM,UTLA22CD,UTLA22NM,RGN22CD,RGN22NM) |>
@@ -123,6 +120,6 @@ forecast<-results |>
 
 write.csv(x = forecast,file = "example_forecast.csv")
 
-gt(forecast)
+#gt(forecast)
 
 ```
