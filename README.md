@@ -1,7 +1,5 @@
 # SPHERE-PPL Health Forecasting Contest - UK Lyme Disease
 
-> **This repo/contest is currently under construction so details may change before the start date.**
-
 ## Introduction[^readme-1]
 
 [^readme-1]: Adapted from UKHSA Website (<https://www.gov.uk/government/publications/lyme-borreliosis-epidemiology/lyme-borreliosis-epidemiology-and-surveillance>)
@@ -50,6 +48,7 @@ Here are some covariates that might be an interesting starting point:
 -   All entries must be loaded into a public Github repo.
 -   All entries must follow the submission formats outlined below.
 -   All entries must include a max 1000 word report to accompany the forecast analyses. This can be as a separate PDF/hmtl or incorporated into a quarto/jupyter notebook.
+-   All submissions must be complete by Friday 30th May 2025.
 
 ## How to Win!
 
