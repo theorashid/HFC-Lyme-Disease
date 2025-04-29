@@ -10,6 +10,8 @@ Habitats suitable for acquiring infection occur in temperate regions of the nort
 
 Several pathogenic genospecies of B. burgdorferi have been identified in Europe and there is evidence for some variation in the types of clinical presentation caused by these different genospecies.
 
+This contest is in collaboration with the [VBD Hub](https://vbdhub.org/).
+
 ## Forecasting Outputs
 
 For this contest, we are looking to forecast Lyme Disease Cases at a range of geographical scales for 2023 & 2024. Incidence rates should be given as cases per 100,000 population.
