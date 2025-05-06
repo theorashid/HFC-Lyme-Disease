@@ -1,8 +1,29 @@
 ---
-title: "Template Report"
-author: ""
+title: "TimeGPT zero-shot forecast of Lyme disease incidence"
+author: "Theo Rashid"
 format:
   html:
     embed-resources: true
 ---
+
+I really hope this submission doesn't win.
+
+I used Nixtla's TimeGPT, a foundation model for time series, to generate predictions of Lyme disease incidence.
+Nixtla have [simple API](https://arxiv.org/abs/2310.03589) to generate predictions, and no knowledge of the transformer architecture or training process is required – just bring a dataset.
+I could have fine-tuned the model for the specific dataset, but I was lazy and tried the zero-shot forecast.
+
+Instead of environmental variables like temperature (high temperature leads to faster tick growth and virus replication rates, and people go outside more) and rainfall (winter rains are a good habitat for ticks), I just used the provided population covariate (averaged for the forecasts) and an [indicator variable from the ONS](https://geoportal.statistics.gov.uk/search?q=PRD_SAM_NPARK&sort=Date%20Created%7Ccreated%7Cdesc) that classifies whether the district is urban or not.
+
+TimeGPT generates uncertainty intervals using conformal prediction.
+This would have been even more sad because [the conformal prediction guy on twitter has a vendetta against Bayesians](https://x.com/predict_addict/status/1908254578472345935).
+Luckily, Nixtla wouldn't let me use conformal prediction because I had too few data-points.
+So I fit an `ARIMA(1,1,1)` model and used those for the confidence intervals.
+
+Both the TimeGPT predictions and the uncertainty intervals were clipped at zero, because you can't have negative incidence, and because it wasn't obvious how to use a link function.
+
+![](forecast.png)
+
+From the plot Nixtla's API provides, the mean estimates look reasonable.
+
+Hopefully this submission does not rank too highly and we do not have to give up on proper principled forecasting models.
 
