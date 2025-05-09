@@ -1,6 +1,9 @@
 ---
 title: "TimeGPT zero-shot forecast of Lyme disease incidence"
-author: "Theo Rashid"
+author:
+  - "Theo Rashid"
+  - "Arran Hamlet"
+  - "Kyle Foreman"
 format:
   html:
     embed-resources: true
